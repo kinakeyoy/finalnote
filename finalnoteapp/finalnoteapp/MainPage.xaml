@@ -62,5 +62,23 @@
                TextColor="Black"              
                x:Name="mensaje"
                Text="Vamos a ver como te va" />
+        <StackLayout x:Name="btnnewydel"
+                     Orientation="Horizontal"                     
+                     HorizontalOptions="CenterAndExpand"
+                     Padding="10"
+                     >
+            <Button
+                BackgroundColor="Blue"
+                TextColor="White" 
+                Text="Nuevo" IsEnabled="True"
+                />
+            <Button
+                BackgroundColor="Blue"
+                TextColor="White" 
+                Text="Salir" IsEnabled="True"
+                />
+           
+        </StackLayout>
+        <Image Source="logo-unicartagena.png"/>
     </StackLayout>
 </ContentPage>
