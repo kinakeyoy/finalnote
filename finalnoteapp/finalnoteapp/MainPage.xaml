@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:finalnoteapp"
              x:Class="finalnoteapp.MainPage"
-             BackgroundColor="White"
+             BackgroundColor="Orange"
              >
     <StackLayout x:Name="Principal"
                  Orientation="Vertical"  
@@ -15,70 +15,76 @@
                      Padding="10"
                      >
             <Button x:Name="btndistancia"
-                BackgroundColor="Blue"
-                TextColor="White" 
-                Text="Distancia"
-                />
+                    FontSize="Medium"
+                    BackgroundColor="Black"
+                    TextColor="White" 
+                    Text="Distancia"/>
             <Button 
-                BackgroundColor="Blue"
+                BackgroundColor="Black"
+                FontSize="Medium"
                 TextColor="White"
                 Text="Presencial"
                 /> 
         </StackLayout >
-        <StackLayout x:Name="computar"
+        <StackLayout x:Name="computarycalcular"
+                    
                      Orientation="Horizontal"                     
                      HorizontalOptions="CenterAndExpand"
                      Padding="10"
                      >
             <Button
-                BackgroundColor="Blue"
+                BackgroundColor="Black"
                 TextColor="White" 
-                Text="Computar" IsEnabled="False"
+                FontSize="Medium"
+                Text="Computar" IsEnabled="True"
                 />
             <Button 
-                BackgroundColor="Blue"
+                BackgroundColor="Black"
                 TextColor="White"
-                Text="Calcular" IsEnabled="False"
+                 FontSize="Medium"
+                Text="Calcular" IsEnabled="True"
                 />
         </StackLayout>
         <StackLayout x:Name="Notas"
                      Orientation="Horizontal"
                      HorizontalOptions="CenterAndExpand">
             
-            <Entry BackgroundColor="Gray" x:Name="nota1" Placeholder="Nota 1" IsEnabled="False"/>
-            <Entry BackgroundColor="Gray" x:Name="nota2" Placeholder="Nota 2" IsEnabled="False"/>
-            <Entry BackgroundColor="Gray" x:Name="nota3" Placeholder="Nota 3" IsEnabled="False"/>
+            <Entry Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" x:Name="nota1" Placeholder="Nota 1" IsEnabled="True"/>
+            <Entry Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" x:Name="nota2" Placeholder="Nota 2" IsEnabled="True"/>
+            <Entry Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" x:Name="nota3" Placeholder="Nota 3" IsEnabled="True"/>
 
         </StackLayout>
 
         <Label FontSize="50"
                HorizontalTextAlignment="Center"
-               TextColor="Black"              
+               TextColor="Green"               
                x:Name="notadef"
                IsEnabled="False"
-               Text="0.0" />
+               Text="5.0" />
         <Label FontSize="Large"
                HorizontalTextAlignment="Center"
                TextColor="Black"              
                x:Name="mensaje"
-               Text="Vamos a ver como te va" />
+               Text="Aprobastes Excelente" />
         <StackLayout x:Name="btnnewydel"
                      Orientation="Horizontal"                     
                      HorizontalOptions="CenterAndExpand"
                      Padding="10"
                      >
             <Button
-                BackgroundColor="Blue"
+                BackgroundColor="Black"
                 TextColor="White" 
+                 FontSize="Medium"
                 Text="Nuevo" IsEnabled="True"
                 />
             <Button
-                BackgroundColor="Blue"
+                BackgroundColor="Black"
+                 FontSize="Medium"
                 TextColor="White" 
                 Text="Salir" IsEnabled="True"
                 />
            
         </StackLayout>
-        <Image Source="logo-unicartagena.png"/>
+        <Image Source="unicartagena.png"/>
     </StackLayout>
 </ContentPage>
