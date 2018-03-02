@@ -2,10 +2,65 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:finalnoteapp"
-             x:Class="finalnoteapp.MainPage">
+             x:Class="finalnoteapp.MainPage"
+             BackgroundColor="White"
+             >
+    <StackLayout x:Name="Principal"
+                 Orientation="Vertical"  
+                 VerticalOptions="CenterAndExpand"
+                 Padding="10" >
+        <StackLayout x:Name="Modalidad"
+                     Orientation="Horizontal"                   
+                     HorizontalOptions="CenterAndExpand"
+                     Padding="10"
+                     >
+            <Button x:Name="btndistancia"
+                BackgroundColor="Blue"
+                TextColor="White" 
+                Text="Distancia"
+                />
+            <Button 
+                BackgroundColor="Blue"
+                TextColor="White"
+                Text="Presencial"
+                /> 
+        </StackLayout >
+        <StackLayout x:Name="computar"
+                     Orientation="Horizontal"                     
+                     HorizontalOptions="CenterAndExpand"
+                     Padding="10"
+                     >
+            <Button
+                BackgroundColor="Blue"
+                TextColor="White" 
+                Text="Computar" IsEnabled="False"
+                />
+            <Button 
+                BackgroundColor="Blue"
+                TextColor="White"
+                Text="Calcular" IsEnabled="False"
+                />
+        </StackLayout>
+        <StackLayout x:Name="Notas"
+                     Orientation="Horizontal"
+                     HorizontalOptions="CenterAndExpand">
+            
+            <Entry BackgroundColor="Gray" x:Name="nota1" Placeholder="Nota 1" IsEnabled="False"/>
+            <Entry BackgroundColor="Gray" x:Name="nota2" Placeholder="Nota 2" IsEnabled="False"/>
+            <Entry BackgroundColor="Gray" x:Name="nota3" Placeholder="Nota 3" IsEnabled="False"/>
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+        </StackLayout>
 
+        <Label FontSize="50"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"              
+               x:Name="notadef"
+               IsEnabled="False"
+               Text="0.0" />
+        <Label FontSize="Large"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"              
+               x:Name="mensaje"
+               Text="Vamos a ver como te va" />
+    </StackLayout>
 </ContentPage>
