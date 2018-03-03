@@ -49,12 +49,12 @@
         <StackLayout x:Name="Notas"
                      Orientation="Horizontal"
                      HorizontalOptions="CenterAndExpand"
-                         Padding="5" 
+                     Padding="1" 
                      >
             
-            <Entry Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" x:Name="nota1" Placeholder="Nota 1" IsEnabled="True"/>
-            <Entry Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" x:Name="nota2" Placeholder="Nota 2" IsEnabled="True"/>
-            <Entry Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" x:Name="nota3" Placeholder="Nota 3" IsEnabled="True"/>
+            <Entry x:Name="entry01" Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White"  Placeholder="Nota 1" IsEnabled="False"/>
+            <Entry x:Name="entry02" Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White"  Placeholder="Nota 2" IsEnabled="False"/>
+            <Entry x:Name="entry03" Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White"  Placeholder="Nota 3" IsEnabled="False"/>
 
         </StackLayout>
 
@@ -64,7 +64,8 @@
                x:Name="notadef"
                IsEnabled="False"
                Text="5.0" 
-                   Padding="5" 
+               
+                   
                />
         <Button 
                 x:Name="btncalcular"
@@ -72,21 +73,21 @@
                 TextColor="White"
                  FontSize="Small"
                 Text="Calcular" IsEnabled="True"
-            Padding="5" 
+            
                 />
       
         <StackLayout x:Name="btnnewydel"
                      Orientation="Horizontal"                     
                      HorizontalOptions="CenterAndExpand"
-                  
+                     Padding="1"
                      >
             <Button
                 x:Name="btnnew"
                 BackgroundColor="Black"
                 TextColor="White" 
-                 FontSize="Small"
+                FontSize="Small"
                 Text="Nuevo" IsEnabled="True"
-                Padding="5" 
+                Padding="1" 
                 />
             <Button
                 x:Name="btnout"
@@ -94,7 +95,7 @@
                  FontSize="Small"
                 TextColor="White" 
                 Text="Salir" IsEnabled="True"
-                Padding="5" 
+                Padding="1" 
                 />
            
         </StackLayout>

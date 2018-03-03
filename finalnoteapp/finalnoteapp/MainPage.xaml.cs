@@ -28,11 +28,16 @@ namespace finalnoteapp
         private void Btnpredecir_Clicked(object sender, System.EventArgs e)
         {
             btncalculo.IsEnabled = false;
+            entry01.IsEnabled = true;
+            entry02.IsEnabled = true;
         }
 
         private void Btncalculo_Clicked(object sender, System.EventArgs e)
         {
             btnpredecir.IsEnabled = false;
+            entry01.IsEnabled = true;
+            entry02.IsEnabled = true;
+            entry03.IsEnabled = true;
         }
 
         private void Btnpres_Clicked(object sender, System.EventArgs e)
