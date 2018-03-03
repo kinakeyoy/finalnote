@@ -1,10 +1,6 @@
-﻿using System;
-
+﻿
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 
 namespace finalnoteapp.Droid
@@ -22,6 +18,8 @@ namespace finalnoteapp.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
+
+       
     }
 }
 

@@ -119,6 +119,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Xam.FormsPlugin.AdMobView">
+      <Version>1.0.23</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -127,5 +130,8 @@
       <Project>{7E7A30B2-B772-44AA-AB74-681D2A1BAB15}</Project>
       <Name>finalnoteapp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\unicartagena.png" />
   </ItemGroup>
 </Project>

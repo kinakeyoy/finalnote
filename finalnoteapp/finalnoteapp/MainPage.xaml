@@ -12,42 +12,45 @@
         <StackLayout x:Name="Modalidad"
                      Orientation="Horizontal"                   
                      HorizontalOptions="CenterAndExpand"
-                     Padding="10"
-                     >
-            <Button x:Name="btndistancia"
-                    FontSize="Medium"
+                         Padding="1" >
+            <Button x:Name="btndist"
+                    FontSize="Small"
                     BackgroundColor="Black"
                     TextColor="White" 
                     Text="Distancia"/>
             <Button 
+                x:Name="btnpres"
                 BackgroundColor="Black"
-                FontSize="Medium"
+                FontSize="Small"
                 TextColor="White"
                 Text="Presencial"
                 /> 
         </StackLayout >
-        <StackLayout x:Name="computarycalcular"
-                    
+        <StackLayout x:Name="computarycalcular"                    
                      Orientation="Horizontal"                     
                      HorizontalOptions="CenterAndExpand"
-                     Padding="10"
+                     Padding="1"
                      >
             <Button
+                x:Name="btncalculo"
                 BackgroundColor="Black"
                 TextColor="White" 
-                FontSize="Medium"
-                Text="Computar" IsEnabled="True"
+                FontSize="Small"
+                Text="Calculo" IsEnabled="True"
                 />
             <Button 
+                x:Name="btnpredecir"
                 BackgroundColor="Black"
                 TextColor="White"
-                 FontSize="Medium"
-                Text="Calcular" IsEnabled="True"
+                 FontSize="Small"
+                Text="Predecir" IsEnabled="True"
                 />
         </StackLayout>
         <StackLayout x:Name="Notas"
                      Orientation="Horizontal"
-                     HorizontalOptions="CenterAndExpand">
+                     HorizontalOptions="CenterAndExpand"
+                         Padding="5" 
+                     >
             
             <Entry Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" x:Name="nota1" Placeholder="Nota 1" IsEnabled="True"/>
             <Entry Keyboard="Numeric" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" x:Name="nota2" Placeholder="Nota 2" IsEnabled="True"/>
@@ -55,36 +58,53 @@
 
         </StackLayout>
 
-        <Label FontSize="50"
+        <Label FontSize="40"
                HorizontalTextAlignment="Center"
                TextColor="Green"               
                x:Name="notadef"
                IsEnabled="False"
-               Text="5.0" />
-        <Label FontSize="Large"
-               HorizontalTextAlignment="Center"
-               TextColor="Black"              
-               x:Name="mensaje"
-               Text="Aprobastes Excelente" />
+               Text="5.0" 
+                   Padding="5" 
+               />
+        <Button 
+                x:Name="btncalcular"
+                BackgroundColor="Black"
+                TextColor="White"
+                 FontSize="Small"
+                Text="Calcular" IsEnabled="True"
+            Padding="5" 
+                />
+      
         <StackLayout x:Name="btnnewydel"
                      Orientation="Horizontal"                     
                      HorizontalOptions="CenterAndExpand"
-                     Padding="10"
+                  
                      >
             <Button
+                x:Name="btnnew"
                 BackgroundColor="Black"
                 TextColor="White" 
-                 FontSize="Medium"
+                 FontSize="Small"
                 Text="Nuevo" IsEnabled="True"
+                Padding="5" 
                 />
             <Button
+                x:Name="btnout"
                 BackgroundColor="Black"
-                 FontSize="Medium"
+                 FontSize="Small"
                 TextColor="White" 
                 Text="Salir" IsEnabled="True"
+                Padding="5" 
                 />
            
         </StackLayout>
         <Image Source="unicartagena.png"/>
+        <Button 
+                x:Name="btnbanner"
+                BackgroundColor="Black"
+                TextColor="White"
+                 FontSize="Small"
+                Text="Banner de Publicidad" IsEnabled="True"
+                />
     </StackLayout>
 </ContentPage>
